@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Georgia', serif;
+  font-family: 'Montserrat', sans-serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -37,8 +37,10 @@ header {
 .logo {
   font-size: 1.6rem;
   color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 nav {
@@ -53,7 +55,11 @@ nav {
   padding: 0.5rem 1.1rem;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   transition: all 0.2s;
 }
 
@@ -74,15 +80,21 @@ nav {
 }
 
 .hero h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   color: var(--pink-dark);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: 2px;
   margin-bottom: 0.5rem;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--subtle);
-  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 /* STATS */
@@ -136,8 +148,12 @@ nav {
 
 /* SECTION HEADINGS */
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: var(--pink-dark);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -212,8 +228,11 @@ h2 {
 }
 
 .card h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--text);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin-bottom: 0.4rem;
 }
 
