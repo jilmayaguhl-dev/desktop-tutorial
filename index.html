@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Angel Fit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🪽 Angel Fit</div>
+    <nav>
+      <button class="nav-btn active" onclick="showTab('dashboard')">Dashboard</button>
+      <button class="nav-btn" onclick="showTab('workouts')">Workouts</button>
+      <button class="nav-btn" onclick="showTab('meals')">Meals</button>
+      <button class="nav-btn" onclick="showTab('log')">My Log</button>
+    </nav>
+  </header>
+
+  <!-- DASHBOARD -->
+  <section id="dashboard" class="tab active">
+    <div class="hero">
+      <h1>Welcome back, Angel ✨</h1>
+      <p>Stay consistent. Stay strong. Stay radiant.</p>
+    </div>
+    <div class="stats">
+      <div class="stat-card">
+        <span class="stat-num" id="stat-workouts">0</span>
+        <span class="stat-label">Workouts Logged</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" id="stat-calories">0</span>
+        <span class="stat-label">Calories Burned</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" id="stat-meals">0</span>
+        <span class="stat-label">Meals Tracked</span>
+      </div>
+    </div>
+    <div class="quote-box">
+      <p id="daily-quote">"Your body is your runway."</p>
+    </div>
+  </section>
+
+  <!-- WORKOUTS -->
+  <section id="workouts" class="tab">
+    <h2>Workout Routines</h2>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterWorkouts('all', this)">All</button>
+      <button class="filter-btn" onclick="filterWorkouts('cardio', this)">Cardio</button>
+      <button class="filter-btn" onclick="filterWorkouts('strength', this)">Strength</button>
+      <button class="filter-btn" onclick="filterWorkouts('yoga', this)">Yoga</button>
+    </div>
+    <div class="card-grid" id="workout-grid"></div>
+  </section>
+
+  <!-- MEALS -->
+  <section id="meals" class="tab">
+    <h2>Meal Plans & Recipes</h2>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterMeals('all', this)">All</button>
+      <button class="filter-btn" onclick="filterMeals('breakfast', this)">Breakfast</button>
+      <button class="filter-btn" onclick="filterMeals('lunch', this)">Lunch</button>
+      <button class="filter-btn" onclick="filterMeals('dinner', this)">Dinner</button>
+      <button class="filter-btn" onclick="filterMeals('snack', this)">Snacks</button>
+    </div>
+    <div class="card-grid" id="meal-grid"></div>
+  </section>
+
+  <!-- LOG -->
+  <section id="log" class="tab">
+    <h2>My Activity Log</h2>
+    <div id="log-list" class="log-list">
+      <p class="empty-log">No activity logged yet. Start a workout or track a meal!</p>
+    </div>
+    <button class="clear-btn" onclick="clearLog()">Clear Log</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
