@@ -1,0 +1,68 @@
+export const workouts = [
+  {
+    id: 1,
+    name: 'Angel Sculpt',
+    category: 'Strength',
+    duration: 40,
+    level: 'Intermediate',
+    focus: ['Glutes', 'Core', 'Arms'],
+    description: 'Long, lean muscles with resistance training.',
+    exercises: [
+      { name: 'Sumo Squat', sets: 3, reps: 15 },
+      { name: 'Glute Bridge', sets: 3, reps: 20 },
+      { name: 'Lateral Lunge', sets: 3, reps: 12 },
+      { name: 'Tricep Dip', sets: 3, reps: 15 },
+      { name: 'Plank Hold', sets: 3, reps: '45s' },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Runway Cardio',
+    category: 'Cardio',
+    duration: 30,
+    level: 'Beginner',
+    focus: ['Full Body', 'Endurance'],
+    description: 'High-energy cardio to burn fat and boost stamina.',
+    exercises: [
+      { name: 'Jump Rope', sets: 4, reps: '1 min' },
+      { name: 'High Knees', sets: 3, reps: '45s' },
+      { name: 'Burpees', sets: 3, reps: 10 },
+      { name: 'Mountain Climbers', sets: 3, reps: '30s' },
+      { name: 'Box Jumps', sets: 3, reps: 12 },
+    ],
+  },
+  {
+    id: 3,
+    name: 'Pilates Core',
+    category: 'Pilates',
+    duration: 45,
+    level: 'Beginner',
+    focus: ['Core', 'Flexibility'],
+    description: 'Classic pilates for a flat stomach and strong posture.',
+    exercises: [
+      { name: 'Hundred', sets: 1, reps: '100 pulses' },
+      { name: 'Roll Up', sets: 3, reps: 10 },
+      { name: 'Leg Circles', sets: 2, reps: '10 each' },
+      { name: 'Single Leg Stretch', sets: 3, reps: 20 },
+      { name: 'Teaser', sets: 3, reps: 8 },
+    ],
+  },
+  {
+    id: 4,
+    name: 'Angel Stretch',
+    category: 'Recovery',
+    duration: 20,
+    level: 'All Levels',
+    focus: ['Flexibility', 'Recovery'],
+    description: 'Full-body stretch for long, graceful lines.',
+    exercises: [
+      { name: 'Hip Flexor Stretch', sets: 1, reps: '60s each' },
+      { name: 'Hamstring Fold', sets: 1, reps: '60s' },
+      { name: 'Pigeon Pose', sets: 1, reps: '90s each' },
+      { name: 'Chest Opener', sets: 1, reps: '60s' },
+      { name: 'Spinal Twist', sets: 1, reps: '60s each' },
+    ],
+  },
+]
+
+export const categories = ['All', 'Strength', 'Cardio', 'Pilates', 'Recovery']

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-noir text-white font-sans;
+    margin: 0;
+  }
+  #root {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
